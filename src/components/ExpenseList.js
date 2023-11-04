@@ -7,7 +7,7 @@ const ExpenseList = () => {
     const { expenses } = useContext(AppContext);
 
     return(
-        <table className="table">
+       <div className="table-responsive"> <table className="table table-bordered table-striped table-hover">
             <thead className="thead-light">
                 <tr>
                     <th scope="col">Department</th>
@@ -25,7 +25,7 @@ const ExpenseList = () => {
                 cost={expense.cost}/>
             ))}
             </tbody>
-        </table>
+        </table></div>
     );
 };
 

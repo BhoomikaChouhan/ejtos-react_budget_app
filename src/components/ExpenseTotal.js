@@ -8,8 +8,14 @@ const ExpenseTotal = () => {
         return (total += item.cost);
     }, 0);
 
+    const gBS = {
+        background: 'linear-gradient(90deg, #9ebd13 0%, #008552 100%)',
+        padding: '20px',
+        color: 'white',
+        borderRadius: '10px', // Rounded corners
+    };
     return(
-        <div className='alert alert-primary'>
+        <div className='' style={gBS}>
             <span>Spent so far: £{totalExpenses}</span>
         </div>
     );
